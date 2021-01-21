@@ -16,6 +16,11 @@ body {
   margin: 0px;
 }
 
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
 .movie-container {
   margin: 20px 0px;
 }
@@ -56,6 +61,52 @@ body {
   margin-left: 18px;
 }
 
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  display: flex;
+  padding: 5px 10px;
+  color: #777;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.showcase li {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
 .row {
   display: flex;
+}
+
+.screen {
+  height: 70px;
+  width: 100%;
+  margin: 15px 0px;
+  transform: rotateX(-45deg);
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0px;
+}
+
+p.text span {
+  color: #6feaf6;
 }
